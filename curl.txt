@@ -1,0 +1,21 @@
+https://www.youtube.com/watch?v=7XUibDYw4mc&feature=emb_logo
+
+*curl is a command line tool to transfer data to or from a server, 
+using any of the supported protocols (HTTP, FTP, IMAP, POP3, SCP, SFTP, SMTP, TFTP, TELNET, LDAP or FILE)
+*used for testing rest api
+*json rest api testing...its a fake api so it cannot store data
+
+to create a file
+curl -o test.txt https://jsonplaceholder.typicode.com/post
+to download:
+curl -O https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg
+response:
+curl --data "title=Hello&body=Hello World" https://jsonplaceholder.typicode.com/posts
+
+update:
+curl -X PUT -d "title=Hello" https://jsonplaceholder.typicode.com/posts/3
+delete
+curl -X DELETE "title=Hello" https://jsonplaceholder.typicode.com/posts/3
+
+to upload to the server(filezilla)
+curl -u @mail.com:password -T filename ftp://ftp.websitename.com
